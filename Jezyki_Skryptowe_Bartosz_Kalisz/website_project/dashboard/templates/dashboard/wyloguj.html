@@ -1,0 +1,11 @@
+{% extends 'dashboard/szablon.html' %}
+{% load static %}
+{% block content %}
+<div class="border-top pt-3 text-center">
+  <h2>Zostałeś wylogowany</h2>
+
+  <small class="text-muted"
+    ><a class="btn btn-danger" href="{% url 'zaloguj' %}">Zaloguj się ponownie</a>
+  </small>
+</div>
+{% endblock content %}

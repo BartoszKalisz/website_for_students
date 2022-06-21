@@ -1,0 +1,68 @@
+{% extends 'dashboard/szablon.html' %}
+{% load static %}
+{% block content %}
+
+<section class="container text-center">
+  <h3>Witaj na na portalu studenckim</h3>
+
+  <hr> <br>
+  <div class="row">
+    <div class="col-md-3">
+      <a href="{% url 'notatki' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/notatki.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Notatki z lekcji
+            </h5>
+            Stwórz notatki z lekcji, w celu przypomnienia sobie ich później.
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="{% url 'lista' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/lista.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Lista zadań domowych
+            </h5>
+            Stwórz listę zadań domowych do zrobienia, aby nie zapomnieć o ich wykonaniu.
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="{% url 'kalkulator' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/kalkulator.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Kalkulator
+            </h5>
+            Użyj kalkulatora do wykonania obliczeń.
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="col-md-3">
+      <a href="{% url 'linijka' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/linijka.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Przelicznik jednostek
+            </h5>
+            Przeliczaj w łatwy sposób jednostki, które potrzebujesz użyć.
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+</section>
+{% endblock content %}
